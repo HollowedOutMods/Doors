@@ -1,1 +1,7 @@
-loadstring(game:HttpGet("https://github.com/PABMAXICHAC/doors-monsters-scripts/raw/main/deal_damage_until_door_open"))()
+local ultimaroom = game.ReplicatedStorage.GameData.LatestRoom.Value
+
+while true do
+wait(1)
+game.Players.LocalPlayer.Character.Humanoid.Health -= 5
+if ultimaroom ~= game.ReplicatedStorage.GameData.LatestRoom.Value then break end
+end
