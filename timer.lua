@@ -1,5 +1,8 @@
+firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent, "I should get out of here...")
+wait(10)
+firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent, "Something feels wrong, I should really get out now...")
+wait(2)
 local ultimaroom = game.ReplicatedStorage.GameData.LatestRoom.Value
-
 plr.Health = game.Players.LocalPlayer.Character.Humanoid.Health
 
 while true do
